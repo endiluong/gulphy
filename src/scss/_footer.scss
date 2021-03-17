@@ -1,0 +1,30 @@
+footer {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 250px;
+  color: #6d6d6d;
+}
+
+.ali {
+  &-footer {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.icon {
+  &-insta {
+    color: #e9162b;
+    &:hover {
+      color: #c70418;
+    }
+  }
+  &-fb {
+    color: #0076f1;
+    &hover {
+      color: #0a62be;
+    }
+  }
+}
