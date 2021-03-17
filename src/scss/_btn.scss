@@ -1,0 +1,37 @@
+.ali-btn{
+ &-search{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #6D6D6D;
+    text-decoration:none;
+    &:hover{
+        text-decoration: none;
+        color: #E9162B;
+    }
+ }
+
+ &-notification{
+    margin:auto;
+    margin-right: 24px;
+    border-radius: 100%;
+    border: none;
+    background: none;
+    &:hover{
+       path{
+          fill: #E9162B;
+       }
+    }
+  
+ }
+ 
+ &-icon{
+    i{
+       margin-left: 12px;
+    }
+ }
+}
