@@ -9,22 +9,14 @@ footer {
   &-footer {
     display: flex;
     padding: 15px;
+    width: 225px;
     justify-content: space-between;
     align-items: center;
   }
 }
-
-.icon {
-  &-insta {
-    color: #e9162b;
-    &:hover {
-      color: #c70418;
-    }
-  }
-  &-fb {
-    color: #0076f1;
-    &hover {
-      color: #0a62be;
-    }
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: center;
   }
 }

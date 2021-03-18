@@ -8,5 +8,6 @@ module.exports = {
   semi: true,
   bracketSpacing: true,
   endOfLine: 'auto',
+
   // 'liveServer.settings.port': 5501
 };

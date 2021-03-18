@@ -22,15 +22,17 @@ header {
 }
 
 .avatar {
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .dropdown {
+  color: #6d6d6d;
   .btn {
     border-radius: 0;
+    color: #6d6d6d;
     &:focus,
     &:hover,
     &:active {
@@ -48,6 +50,17 @@ header {
 
   &__logo {
     padding-left: 15px;
+    display: flex;
+    align-items: center;
+  }
+  &__logoShort {
+    display: none;
+  }
+  &__main {
+    width: 100%;
+  }
+  &__menu {
+    display: none;
   }
 }
 
@@ -62,6 +75,9 @@ header {
 
 .ali-nav {
   border-bottom: solid 1px #f5f5f5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   a {
     color: black;
     &:hover,
@@ -71,11 +87,17 @@ header {
       font-weight: 400;
     }
   }
+  i {
+    color: #e9162b;
+  }
 
   .nav-item {
     position: relative;
     min-width: 10%;
-
+    color: #6d6d6d;
+    a {
+      color: #6d6d6d;
+    }
     & .nav-link {
       padding-bottom: 1.5rem;
     }
@@ -95,5 +117,146 @@ header {
         width: 100%;
       }
     }
+  }
+}
+
+.show {
+  .dropdown-menu__content {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  .ali-header {
+    grid-template-columns: 250px 1fr;
+    column-gap: 15px;
+    margin-bottom: 24px;
+
+    &__logo {
+      padding-left: 15px;
+    }
+    &__menu {
+      display: none;
+    }
+  }
+  .search {
+    &-container {
+      width: 100%;
+      border-radius: 50%;
+      height: 40px;
+      border-radius: 30px;
+    }
+    &-box {
+      color: #6d6d6d;
+      padding: 0 10px;
+      border: 0;
+      outline: 0;
+      background: none;
+      width: 100%;
+      line-height: 40px;
+    }
+  }
+  .ali-subHeader {
+    display: grid;
+    grid-template-columns: 249px 1fr;
+    column-gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ali-header {
+    grid-template-columns: 120px 1fr;
+  }
+  .ali-subHeader {
+    grid-template-columns: 1fr;
+    div:first-child {
+      display: none !important;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .ali-header {
+    grid-template-columns: 40px 1fr 40px;
+    margin-bottom: 0;
+    &__main {
+      .right-side {
+        display: none !important;
+      }
+    }
+    &__logo {
+      display: none !important;
+    }
+    &__logoShort {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__menu {
+      display: flex;
+      position: relative;
+
+      margin: 0;
+      padding-bottom: 0;
+
+      .dropdown-menu__content {
+        display: none;
+        position: absolute;
+        position: absolute;
+        top: 30px;
+        right: -15px;
+        box-shadow: 5px 8px 20px 0px #2f2f2f;
+        width: 200px;
+        z-index: 999999;
+        background-color: #fff;
+
+        .dropdown {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+        }
+
+        .ali-nav {
+          flex-direction: column;
+          .nav-item {
+            width: 100%;
+            text-align: center;
+
+            &.active {
+              background-color: #e9162b;
+              a {
+                color: white;
+              }
+            }
+            .nav-link {
+              padding: 20px 0;
+            }
+          }
+        }
+      }
+    }
+    .m-ali-user_info {
+      height: 70px;
+      flex-direction: row-reverse;
+      align-items: center;
+      border-bottom: 1px solid #f5f5f5;
+
+      .avatar-wrapper {
+        margin-left: 15px;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .ali-btn-notification {
+        margin: 0;
+        svg {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+  }
+  .ali-subHeader {
+    display: none;
   }
 }

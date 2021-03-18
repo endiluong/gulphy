@@ -1,6 +1,31 @@
+.vertical-divider {
+  height: 80%;
+  border-left: 0.5px solid #d5d5d5;
+  margin: auto 24px;
+}
+.horizontal-divider {
+  width: 100%;
+  border-bottom: 0.5px solid #d5d5d5;
+  margin: 24px 0;
+}
 
-.vertical-devider{
-    height: 100%;
-    border-left: .5px solid #6D6D6D;
-    margin: 0 24px;
+.icon {
+  &-insta {
+    color: #e9162b;
+    &:hover {
+      color: #c70418;
+    }
+  }
+  &-fb {
+    color: #0076f1;
+    &hover {
+      color: #0a62be;
+    }
+  }
+  &-tw {
+    color: #08a0e9;
+    &:hover {
+      color: #0084b4;
+    }
+  }
 }

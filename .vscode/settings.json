@@ -23,5 +23,11 @@
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": false
+  "editor.formatOnPaste": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "cSpell.words": [
+    "dropdowns"
+  ]
 }
