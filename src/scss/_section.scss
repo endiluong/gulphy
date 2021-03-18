@@ -310,4 +310,23 @@ section {
       }
     }
   }
+  .ali-news__detail {
+    .detail-header {
+      img {
+        max-width: calc(100vw - 30px);
+      }
+    }
+    .detail-body {
+      display: flex;
+      flex-direction: column-reverse;
+      &__info {
+        flex-direction: row;
+        height: fit-content;
+        margin-bottom: 15px;
+        span:last-child {
+          display: none;
+        }
+      }
+    }
+  }
 }
